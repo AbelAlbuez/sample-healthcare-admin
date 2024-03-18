@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  sql_server:
+    platform: linux/amd64
+    container_name: sql-server-container
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=@A19981811@
+    ports:
+      - "1433:1433"
+    volumes:
+      - /usr/local/var/opt/mssql/data
+      - ./sql-scripts:/docker-entrypoint-initdb.d/sql-scripts
+      - ./init-scripts:/docker-entrypoint-initdb.d/init-scripts
+    entrypoint: /bin/bash -c "chmod +x /docker-entrypoint-initdb.d/init-scripts/init-db.sh && /docker-entrypoint-initdb.d/init-scripts/init-db.sh & /opt/mssql/bin/sqlservr"
