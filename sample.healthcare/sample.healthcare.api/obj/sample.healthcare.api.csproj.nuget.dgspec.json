@@ -1,0 +1,276 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.api/sample.healthcare.api.csproj": {}
+  },
+  "projects": {
+    "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.api/sample.healthcare.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.api/sample.healthcare.api.csproj",
+        "projectName": "sample.healthcare.api",
+        "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.api/sample.healthcare.api.csproj",
+        "packagesPath": "/Users/abelalbuez/.nuget/packages/",
+        "outputPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/abelalbuez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/sample.healthcare.application.csproj": {
+                "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/sample.healthcare.application.csproj"
+              },
+              "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/sample.healthcare.infrastructure.csproj": {
+                "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/sample.healthcare.infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/sample.healthcare.application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/sample.healthcare.application.csproj",
+        "projectName": "sample.healthcare.application",
+        "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/sample.healthcare.application.csproj",
+        "packagesPath": "/Users/abelalbuez/.nuget/packages/",
+        "outputPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/abelalbuez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj": {
+                "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj",
+        "projectName": "sample.healthcare.domain",
+        "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj",
+        "packagesPath": "/Users/abelalbuez/.nuget/packages/",
+        "outputPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/abelalbuez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/sample.healthcare.infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/sample.healthcare.infrastructure.csproj",
+        "projectName": "sample.healthcare.infrastructure",
+        "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/sample.healthcare.infrastructure.csproj",
+        "packagesPath": "/Users/abelalbuez/.nuget/packages/",
+        "outputPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/abelalbuez/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj": {
+                "projectPath": "/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/sample.healthcare.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

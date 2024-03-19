@@ -1,0 +1,12 @@
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/bin/Debug/net8.0/sample.healthcare.domain.deps.json
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/bin/Debug/net8.0/sample.healthcare.domain.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/bin/Debug/net8.0/sample.healthcare.domain.pdb
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.AssemblyInfoInputs.cache
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.AssemblyInfo.cs
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.csproj.CoreCompileInputs.cache
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.sourcelink.json
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/refint/sample.healthcare.domain.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/sample.healthcare.domain.pdb
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.domain/obj/Debug/net8.0/ref/sample.healthcare.domain.dll

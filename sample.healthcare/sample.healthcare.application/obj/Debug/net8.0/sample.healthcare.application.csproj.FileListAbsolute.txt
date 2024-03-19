@@ -1,0 +1,16 @@
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/bin/Debug/net8.0/sample.healthcare.application.deps.json
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/bin/Debug/net8.0/sample.healthcare.application.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/bin/Debug/net8.0/sample.healthcare.application.pdb
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/bin/Debug/net8.0/sample.healthcare.domain.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/bin/Debug/net8.0/sample.healthcare.domain.pdb
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.csproj.AssemblyReference.cache
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.AssemblyInfoInputs.cache
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.AssemblyInfo.cs
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.csproj.CoreCompileInputs.cache
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.sourcelink.json
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.h.2496AF8C.Up2Date
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/refint/sample.healthcare.application.dll
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/sample.healthcare.application.pdb
+/Users/abelalbuez/Documents/sample-healthcare-admin/sample.healthcare/sample.healthcare.application/obj/Debug/net8.0/ref/sample.healthcare.application.dll
