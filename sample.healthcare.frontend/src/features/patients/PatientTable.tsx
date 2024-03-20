@@ -7,6 +7,7 @@ import {
   TableBody,
   Button,
 } from "@mui/material";
+import ConfirmationAlert from "@/molecules";
 
 export interface Patient {
   patientID: number;
@@ -17,11 +18,26 @@ export interface Patient {
 }
 
 interface Props {
-  onDelete: (patientId: number) => void;
+  onDelete: (patientId: string) => Promise<void>;
   patients: Patient[];
 }
 export const PatientTable = (props: Props) => {
   const { onDelete, patients } = props;
+  const [open, setOpen] = useState(false);
+  const [selectedPatientId, setSelectedPatientId] = useState(0);
+
+  const handleDeleteOpen = (id: number) => {
+    setSelectedPatientId(id);
+    setOpen(true);
+  };
+
+  const handleDeleteClose = () => {
+    setOpen(false);
+  };
+
+  const handleDelete = () => {
+    onDelete(String(selectedPatientId));
+  };
   const [formattedPatients, setFormattedPatients] = useState<Patient[]>([]);
 
   useEffect(() => {
@@ -42,33 +58,40 @@ export const PatientTable = (props: Props) => {
     }
   }, [patients]);
   return (
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCell>PatientID</TableCell>
-          <TableCell>First Name</TableCell>
-          <TableCell>Last Name</TableCell>
-          <TableCell>Date of Birth</TableCell>
-          <TableCell>Patient Status</TableCell>
-          <TableCell>Actions</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {formattedPatients.map((patient) => (
-          <TableRow key={patient.patientID}>
-            <TableCell>{patient.patientID}</TableCell>
-            <TableCell>{patient.firstName}</TableCell>
-            <TableCell>{patient.lastName}</TableCell>
-            <TableCell>{patient.dateOfBirth}</TableCell>
-            <TableCell>{patient.patientStatus}</TableCell>
-            <TableCell>
-              <Button onClick={() => onDelete(patient.patientID)}>
-                Delete
-              </Button>
-            </TableCell>
+    <>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>PatientID</TableCell>
+            <TableCell>First Name</TableCell>
+            <TableCell>Last Name</TableCell>
+            <TableCell>Date of Birth</TableCell>
+            <TableCell>Patient Status</TableCell>
+            <TableCell>Actions</TableCell>
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+        </TableHead>
+        <TableBody>
+          {formattedPatients.map((patient) => (
+            <TableRow key={patient.patientID}>
+              <TableCell>{patient.patientID}</TableCell>
+              <TableCell>{patient.firstName}</TableCell>
+              <TableCell>{patient.lastName}</TableCell>
+              <TableCell>{patient.dateOfBirth}</TableCell>
+              <TableCell>{patient.patientStatus}</TableCell>
+              <TableCell>
+                <Button onClick={() => handleDeleteOpen(patient.patientID)}>
+                  Delete
+                </Button>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+      <ConfirmationAlert
+        open={open}
+        onClose={handleDeleteClose}
+        onAction={() => handleDelete()}
+      />
+    </>
   );
 };

@@ -7,13 +7,16 @@ import {
   TableBody,
   Button,
 } from "@mui/material";
-import { useGetPatientsQuery } from "./patientApi";
+import { useDeletePatientMutation, useGetPatientsQuery } from "./patientApi";
 import { PatientTable } from "./PatientTable";
 
 export const PatientComponent = () => {
-  const { data: patients, isLoading, isError } = useGetPatientsQuery();
+  const { data: patients } = useGetPatientsQuery();
+  const [deletePatient ] = useDeletePatientMutation();
   console.log(patients)
-  const onDelete = (patientId: number) => {};
+  const onDelete = async (patientId: string) => {
+    await deletePatient(patientId);
+  };
   return (
     <div>
       <PatientTable patients={patients || []} onDelete={onDelete} />
