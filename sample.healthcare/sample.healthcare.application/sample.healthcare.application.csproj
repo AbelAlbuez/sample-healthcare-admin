@@ -11,12 +11,14 @@
     <None Remove="Queries\" />
     <None Remove="Commands\Patients\" />
     <None Remove="Queries\Patients\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Queries\" />
     <Folder Include="Commands\Patients\" />
     <Folder Include="Queries\Patients\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\sample.healthcare.domain\sample.healthcare.domain.csproj" />

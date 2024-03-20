@@ -5,11 +5,10 @@ namespace sample.healthcare.domain.Repositories
 {
     public interface IPatientRepository
     {
-        Task<List<Patient>> GetAllAsync();
+        Task<IEnumerable<Patient>> GetPatientsAsync(int skip, int take);
         Task<Patient> GetAsync(int patientID);
         Task AddAsync(Patient patient);
         Task UpdateAsync(Patient patient);
-        Task DeleteAsync(Patient patient);
     }
 }
 

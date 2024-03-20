@@ -5,7 +5,7 @@ namespace sample.healthcare.domain.Entities
     {
         public int StateId { get; set; }
         public int CityId { get; set; }
-        public required string Name { get; set; }
+        public required string StateName { get; set; }
     }
 }
 

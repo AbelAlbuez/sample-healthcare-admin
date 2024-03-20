@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using MediatR;
 using sample.healthcare.domain.Entities;
+using sample.healthcare.domain.Enums;
 using sample.healthcare.domain.Repositories;
 
 namespace sample.healthcare.application.Commands.Patients
@@ -11,13 +13,15 @@ namespace sample.healthcare.application.Commands.Patients
         public string FirstName { get; }
         public string LastName { get; }
         public DateTime DateOfBirth { get; }
+        public PatientStatus PatientStatus { get; }
 
-        public UpdatePatientCommand(int patientId, string firstName, string lastName, DateTime dateOfBirth)
+        public UpdatePatientCommand(int patientId, string firstName, string lastName, DateTime dateOfBirth, PatientStatus patientStatus)
         {
             PatientId = patientId;
             FirstName = firstName;
             LastName = lastName;
             DateOfBirth = dateOfBirth;
+            PatientStatus = patientStatus;
         }
 
         public class Handler : IRequestHandler<UpdatePatientCommand, bool>
@@ -42,7 +46,8 @@ namespace sample.healthcare.application.Commands.Patients
                     PatientID = patient.PatientID,
                     FirstName = request.FirstName,
                     LastName = request.LastName,
-                    DateOfBirth = request.DateOfBirth
+                    DateOfBirth = request.DateOfBirth,
+                    PatientStatus = request.PatientStatus
                 };
 
                 await _patientRepository.UpdateAsync(updatedPatient);

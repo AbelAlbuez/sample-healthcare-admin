@@ -2,25 +2,26 @@ USE HealthcareAdminDB;
 GO
 
 CREATE TABLE Patient (
-    PatientID INT PRIMARY KEY,
+    PatientID INT PRIMARY KEY IDENTITY,
     FirstName NVARCHAR(50),
     LastName NVARCHAR(50),
-    DateOfBirth DATE
+    DateOfBirth DATE,
+    PatientStatus INT
 );
 
 CREATE TABLE City (
-    CityId INT PRIMARY KEY,
-    Name NVARCHAR(50)
+    CityId INT PRIMARY KEY IDENTITY,
+    CityName NVARCHAR(50)
 );
 
 CREATE TABLE State (
-    StateId INT PRIMARY KEY,
+    StateId INT PRIMARY KEY IDENTITY,
     CityId INT FOREIGN KEY REFERENCES City(CityId),
-    Name NVARCHAR(50)
+    StateName NVARCHAR(50)
 );
 
 CREATE TABLE PatientAddress (
-    Id INT PRIMARY KEY,
+    Id INT PRIMARY KEY IDENTITY,
     PatientId INT FOREIGN KEY REFERENCES Patient(PatientID),
     Line1 NVARCHAR(100),
     Line2 NVARCHAR(100),

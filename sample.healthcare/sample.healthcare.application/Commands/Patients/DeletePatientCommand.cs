@@ -1,5 +1,6 @@
 ﻿using System;
 using MediatR;
+using sample.healthcare.domain.Entities;
 using sample.healthcare.domain.Repositories;
 
 namespace sample.healthcare.application.Commands.Patients
@@ -25,12 +26,22 @@ namespace sample.healthcare.application.Commands.Patients
             public async Task<bool> Handle(DeletePatientCommand request, CancellationToken cancellationToken)
             {
                 var patient = await _patientRepository.GetAsync(request.PatientId);
+                var updatedPatient = new Patient
+                {
+                    PatientID = patient.PatientID,
+                    FirstName = patient.FirstName,
+                    LastName = patient.LastName,
+                    DateOfBirth = patient.DateOfBirth,
+                    PatientStatus = domain.Enums.PatientStatus.Disabled
+                };
+              
+
                 if (patient == null)
                 {
                     return false;
                 }
 
-                await _patientRepository.DeleteAsync(patient);
+                await _patientRepository.UpdateAsync(updatedPatient);
 
                 return true;
             }

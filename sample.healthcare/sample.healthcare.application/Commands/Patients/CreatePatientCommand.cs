@@ -1,18 +1,19 @@
 ﻿using System;
 using MediatR;
 using sample.healthcare.domain.Entities;
+using sample.healthcare.domain.Enums;
 using sample.healthcare.domain.Repositories;
 
 namespace sample.healthcare.application.Commands.Patients
 {
 
-    public record Params(string FirstName, string LastName, DateTime DateOfBirth);
+    public record CreatePatientParams(string FirstName, string LastName, DateTime DateOfBirth);
 
     public class CreatePatientCommand : IRequest<int>
     {
-        public Params Parameters { get; }
+        public CreatePatientParams Parameters { get; }
 
-        public CreatePatientCommand(Params parameters)
+        public CreatePatientCommand(CreatePatientParams parameters)
         {
             Parameters = parameters ?? throw new ArgumentNullException(nameof(parameters));
         }
@@ -36,7 +37,8 @@ namespace sample.healthcare.application.Commands.Patients
                 {
                     FirstName = firstName,
                     LastName = lastName,
-                    DateOfBirth = dateOfBirth
+                    DateOfBirth = dateOfBirth,
+                    PatientStatus = PatientStatus.Active
                 };
 
                 await _patientRepository.AddAsync(newPatient);
