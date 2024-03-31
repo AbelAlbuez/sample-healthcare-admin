@@ -1,10 +1,8 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { Patient } from "./PatientTable";
-
+import { AddPatientRequest, Patient, UpdatePatientRequest } from "./model";
 export const PATIENT_API_TAG_TYPES = {
   patient: "patient",
 };
-
 export const patientApi = createApi({
   reducerPath: "patientApi",
   baseQuery: fetchBaseQuery({ baseUrl: "/api/Patients" }),
@@ -14,7 +12,7 @@ export const patientApi = createApi({
       query: () => "",
       providesTags: [PATIENT_API_TAG_TYPES.patient],
     }),
-    addPatient: builder.mutation<Patient, Partial<Patient>>({
+    addPatient: builder.mutation<Patient, Partial<AddPatientRequest>>({
       query: (newPatient) => ({
         url: "",
         method: "POST",
@@ -24,12 +22,15 @@ export const patientApi = createApi({
     }),
     updatePatient: builder.mutation<
       Patient,
-      { id: string; updatedPatient: Partial<Patient> }
+      {
+        id: string;
+        patient: UpdatePatientRequest;
+      }
     >({
-      query: ({ id, updatedPatient }) => ({
+      query: ({ id, patient }) => ({
         url: `/${id}`,
         method: "PUT",
-        body: updatedPatient,
+        body: patient,
       }),
       invalidatesTags: [PATIENT_API_TAG_TYPES.patient],
     }),
